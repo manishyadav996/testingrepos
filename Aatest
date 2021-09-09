@@ -1,0 +1,22 @@
+root@ip-100-99-158-8 ~]# cat abc.txt
+[{"account_name":"root","password_hash":"abcd1234"},{"account_name":"postfix","password_hash":"4321ccba"},{"account_name":"nobody","password_hash":"xyz890"}]
+
+
+
+
+
+[root@ip-100-99-158-8 ~]# cat abc.txt | jq
+[
+  {
+    "account_name": "root",
+    "password_hash": "abcd1234"
+  },
+  {
+    "account_name": "postfix",
+    "password_hash": "4321ccba"
+  },
+  {
+    "account_name": "nobody",
+    "password_hash": "xyz890"
+  }
+]
